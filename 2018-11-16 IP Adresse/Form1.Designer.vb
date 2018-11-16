@@ -52,7 +52,7 @@ Partial Class Form1
         '
         'cmdKnopf
         '
-        Me.cmdKnopf.Location = New System.Drawing.Point(316, 200)
+        Me.cmdKnopf.Location = New System.Drawing.Point(316, 173)
         Me.cmdKnopf.Name = "cmdKnopf"
         Me.cmdKnopf.Size = New System.Drawing.Size(418, 40)
         Me.cmdKnopf.TabIndex = 2
