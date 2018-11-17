@@ -9,6 +9,8 @@
     Dim sammler As String
     Dim xyz As Single
     Dim gesamt As String
+    Dim lenght As Single
+    Dim difference As Single
 
     Private Sub cmdKnopf_Click(sender As Object, e As EventArgs) Handles cmdKnopf.Click
         IPone = txtIPone.Text
@@ -22,6 +24,12 @@
         IPtwo = dezubin(IPtwo)
         IPthree = dezubin(IPthree)
         IPfour = dezubin(IPfour)
+
+        'IPone = addleadzeros(IPone)
+        'IPtwo = addleadzeros(IPtwo)
+        'IPthree = addleadzeros(IPthree)
+        'IPfour = addleadzeros(IPfour)
+
         gesamt = IPone & IPtwo & IPthree & IPfour
         txtTest.Text = IPone
         txtAusgabe.Text = gesamt
@@ -52,4 +60,16 @@
         End While
         dezubin = sammler
     End Function
+
+
+    'Public Function addleadzeros(fip)
+    '    lenght = Len(fip)
+    '    MsgBox(lenght)
+    '    difference = 8 - lenght
+    '    If lenght < 8 Then
+    '        fip.ToString().PadLeft(difference, "0")
+    '    End If
+    '    MsgBox(difference)
+    '    addleadzeros = fip
+    'End Function
 End Class
