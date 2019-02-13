@@ -32,6 +32,7 @@ Partial Class Form1
         Me.txtAusgabe = New System.Windows.Forms.TextBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.txtTest = New System.Windows.Forms.TextBox()
+        Me.lblAusgabe = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'txtIPone
@@ -55,7 +56,7 @@ Partial Class Form1
         Me.cmdKnopf.Location = New System.Drawing.Point(316, 173)
         Me.cmdKnopf.Name = "cmdKnopf"
         Me.cmdKnopf.Size = New System.Drawing.Size(418, 40)
-        Me.cmdKnopf.TabIndex = 2
+        Me.cmdKnopf.TabIndex = 5
         Me.cmdKnopf.Text = "Knopf"
         Me.cmdKnopf.UseVisualStyleBackColor = True
         '
@@ -64,21 +65,21 @@ Partial Class Form1
         Me.txtIPtwo.Location = New System.Drawing.Point(422, 107)
         Me.txtIPtwo.Name = "txtIPtwo"
         Me.txtIPtwo.Size = New System.Drawing.Size(100, 26)
-        Me.txtIPtwo.TabIndex = 3
+        Me.txtIPtwo.TabIndex = 2
         '
         'txtIPthree
         '
         Me.txtIPthree.Location = New System.Drawing.Point(528, 107)
         Me.txtIPthree.Name = "txtIPthree"
         Me.txtIPthree.Size = New System.Drawing.Size(100, 26)
-        Me.txtIPthree.TabIndex = 4
+        Me.txtIPthree.TabIndex = 3
         '
         'txtIPfour
         '
         Me.txtIPfour.Location = New System.Drawing.Point(634, 107)
         Me.txtIPfour.Name = "txtIPfour"
         Me.txtIPfour.Size = New System.Drawing.Size(100, 26)
-        Me.txtIPfour.TabIndex = 5
+        Me.txtIPfour.TabIndex = 4
         '
         'txtAusgabe
         '
@@ -100,11 +101,21 @@ Partial Class Form1
         Me.txtTest.Size = New System.Drawing.Size(100, 26)
         Me.txtTest.TabIndex = 7
         '
+        'lblAusgabe
+        '
+        Me.lblAusgabe.AutoSize = True
+        Me.lblAusgabe.Location = New System.Drawing.Point(451, 253)
+        Me.lblAusgabe.Name = "lblAusgabe"
+        Me.lblAusgabe.Size = New System.Drawing.Size(57, 20)
+        Me.lblAusgabe.TabIndex = 8
+        Me.lblAusgabe.Text = "Label2"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblAusgabe)
         Me.Controls.Add(Me.txtTest)
         Me.Controls.Add(Me.txtAusgabe)
         Me.Controls.Add(Me.txtIPfour)
@@ -129,4 +140,5 @@ Partial Class Form1
     Friend WithEvents txtAusgabe As TextBox
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents txtTest As TextBox
+    Friend WithEvents lblAusgabe As Label
 End Class
